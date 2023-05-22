@@ -68,7 +68,10 @@ function startOver() {
   }
 
 $("button").click(function() {
-    $("h1").text("press A key to start");
-    startOver();
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
 });
   
