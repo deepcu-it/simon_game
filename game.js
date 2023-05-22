@@ -68,10 +68,10 @@ function startOver() {
   }
 
 $("button").click(function() {
-  if (!started) {
+  if (!start) {
     $("#level-title").text("Level " + level);
     nextSequence();
-    started = true;
+    start= true;
   }
 });
   
