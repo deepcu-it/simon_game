@@ -70,7 +70,7 @@ function startOver() {
 $("button").click(function() {
   if (!start) {
     $("#level-title").text("Level " + level);
-    nextSequence();
+    nextsequence();
     start= true;
   }
 });
